@@ -1,0 +1,156 @@
+$mobile-width: 375px;
+$laptop-width: 1440px;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+// блэк бакарди  ++
+//окутала меня окуталалла ты будто мой морт мариуанна
+//на баре синеее ++
+//робко тает дым мой белый никотин
+//2 билета на паром под неоновым
+//новелло ++
+//детство
+//i am not a star
+//иностранец
+//взять взять взять ++
+main {
+  border: 2px solid rgb(236, 56, 86);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 32px;
+  gap:30px;
+  
+  @media (min-width: $laptop-width) {
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 511px;
+    width: calc(100% - 330px);
+  }
+
+  .part1 {
+    
+    border: 2px solid rgb(40, 33, 227);
+    box-sizing:border-box;
+    @media (min-width: $laptop-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 730px;
+        width: calc(100% - 50%);
+    }
+    .image_part1 {
+      width: 100%;
+      height: 300px;
+      gap: 0;
+      opacity: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media (min-width: $laptop-width) {
+        width: 100%;
+        height: 300px;
+        left: 0;
+        opacity: 1;
+      }
+    }
+    .sections {
+        @media (min-width:$laptop-width) {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            box-sizing: border-box;
+            
+            h1{
+                font-family: Inter;
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 56px;
+                text-align: left;
+            }
+            p{
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: left;
+
+            }
+            .title_part1, .text_part1 {
+                height: 183px;
+                width: 181px;
+                box-sizing:border-box;
+              flex: 1; // Each takes up equal space (50%)
+            }
+            
+        }
+      h1 {
+        font-family: Inter;
+        font-weight: 800;
+        font-size: 40px;
+        color: #00001a;
+        margin-bottom: 16px;
+        line-height: 40px;
+        text-align: start;
+      }
+      .text_part1 {
+        @media (min-width: $laptop-width) {
+          display: flex;
+          flex-direction: column;
+          width: 100%/2;
+        }
+        p {
+          font-family: Inter;
+          font-weight: 400;
+          font-size: 15px;
+          color: #5e607a;
+          
+        }
+        button {
+          font-family: Inter;
+          border: none;
+          background-color: #f15d51;
+          color: #fffdfa;
+          width: 185px;
+          height: 48px;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .part2 {
+    background-color: #00001a;
+    padding: 24px 20px;
+
+    @media (min-width:$laptop-width){
+        width: calc(100% - 50%);
+
+    }
+    h1 {
+      font-family: Inter;
+      color: #e9aa52;
+      font-weight: 700;
+      font-size: 32px;
+    }
+    h2 {
+      color: #fffdfa;
+      font-size: 20px;
+      font-family: Inter;
+      font-weight: 800;
+    }
+    p {
+      color: #c5c6ce;
+      font-size: 15px;
+      font-family: Inter;
+      font-weight: 400;
+    }
+    .rectangle {
+      height: 1px;
+      background-color: #5e607a;
+    }
+  }
+}
