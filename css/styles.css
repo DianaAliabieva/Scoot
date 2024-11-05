@@ -246,6 +246,7 @@ main .part1 .sections .text_part1 button {
   font-size: 14px;
   font-weight: 700;
   margin-top: 10px;
+  cursor: pointer;
 }
 main .part2 {
   background-color: #00001a;
