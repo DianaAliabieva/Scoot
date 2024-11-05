@@ -13,7 +13,6 @@ $laptop-width: 1440px;
 //иностранец
 //взять взять взять ++
 main {
-  border: 2px solid rgb(236, 56, 86);
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 32px;
@@ -31,14 +30,12 @@ main {
   }
 
   .part1 {
-    
-    border: 2px solid rgb(40, 33, 227);
     box-sizing:border-box;
     @media (min-width: $laptop-width) {
         flex-direction: row;
         flex-wrap: wrap;
         width: 730px;
-        width: calc(100% - 50%);
+        width: calc(100% - 30%);
     }
     .image_part1 {
       width: 100%;
@@ -76,7 +73,8 @@ main {
                 font-size: 15px;
                 font-weight: 400;
                 line-height: 26px;
-                text-align: left;
+                text-align: left;;
+               
 
             }
             .title_part1, .text_part1 {
@@ -118,6 +116,7 @@ main {
           height: 48px;
           font-size: 14px;
           font-weight: 700;
+          margin-top: 10px;
         }
       }
     }
@@ -125,9 +124,10 @@ main {
   .part2 {
     background-color: #00001a;
     padding: 24px 20px;
-
+    margin-top: 64px;
     @media (min-width:$laptop-width){
-        width: calc(100% - 50%);
+        width: calc(100% - 70%);
+        margin-top: 0px;
 
     }
     h1 {
@@ -147,6 +147,7 @@ main {
       font-size: 15px;
       font-family: Inter;
       font-weight: 400;
+      margin-bottom:10px
     }
     .rectangle {
       height: 1px;

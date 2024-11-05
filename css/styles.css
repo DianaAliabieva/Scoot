@@ -31,7 +31,6 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   margin: 0;
-  border: 2px solid violet;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -78,7 +77,6 @@ textarea:not([rows]) {
 }
 
 header {
-  border: 2px solid green;
   margin-top: 28px;
   margin-left: 16px;
   margin-right: 16px;
@@ -140,7 +138,6 @@ header nav {
 }
 
 main {
-  border: 2px solid rgb(236, 56, 86);
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 32px;
@@ -159,7 +156,6 @@ main {
   }
 }
 main .part1 {
-  border: 2px solid rgb(40, 33, 227);
   box-sizing: border-box;
 }
 @media (min-width: 1440px) {
@@ -167,7 +163,7 @@ main .part1 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 730px;
-    width: 50%;
+    width: 70%;
   }
 }
 main .part1 .image_part1 {
@@ -249,14 +245,17 @@ main .part1 .sections .text_part1 button {
   height: 48px;
   font-size: 14px;
   font-weight: 700;
+  margin-top: 10px;
 }
 main .part2 {
   background-color: #00001a;
   padding: 24px 20px;
+  margin-top: 64px;
 }
 @media (min-width: 1440px) {
   main .part2 {
-    width: 50%;
+    width: 30%;
+    margin-top: 0px;
   }
 }
 main .part2 h1 {
@@ -276,6 +275,7 @@ main .part2 p {
   font-size: 15px;
   font-family: Inter;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 main .part2 .rectangle {
   height: 1px;
@@ -283,7 +283,6 @@ main .part2 .rectangle {
 }
 
 section {
-  border: 2px solid rgb(108, 4, 122);
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 32px;
@@ -304,7 +303,6 @@ section {
   }
 }
 section .card {
-  border: 2px solid rgb(55, 12, 61);
   display: flex;
   flex-direction: row;
   gap: auto;
