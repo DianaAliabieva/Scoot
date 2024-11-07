@@ -1,0 +1,45 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Font-family variable
+$space-mono-font: "Space Mono", serif;
+
+// Font-weight variables
+$font-weight-light: 100;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Font-style variables
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+// Mixin for Space Mono font
+@mixin space-mono($uniquifier, $weight, $style) {
+    .space-mono-#{$uniquifier} {
+      font-family: $space-mono-font;
+      font-weight: $weight;
+      font-style: $style;
+    }
+  }
+  //@include space-mono('regular', $font-weight-regular, $font-style-normal);
+//lexend 
+// Font-family variable
+$lexend-deca-font: "Lexend Deca", sans-serif;
+
+
+// Mixin for Lexend Deca font
+@mixin lexend-deca($uniquifier, $weight) {
+  .lexend-deca-#{$uniquifier} {
+    font-family: $lexend-deca-font;
+    font-optical-sizing: $font-optical-sizing;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+// // Mixin usage with a div class name
+// div.randomname {
+//   @include lexend-deca('randomname', $font-weight-regular);  // 'randomname' is the uniquifier
+// }
