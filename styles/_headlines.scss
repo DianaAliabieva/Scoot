@@ -12,10 +12,7 @@
     color: colors.$darkNavy;
   }
 
-h1{
-    @include h1-style;
-    
-}
+
 
   @mixin h2-style {
     font-size: 48px;

@@ -16,13 +16,11 @@ $font-style-normal: normal;
 $font-style-italic: italic;
 
 // Mixin for Space Mono font
-@mixin space-mono($uniquifier, $weight, $style) {
-    .space-mono-#{$uniquifier} {
-      font-family: $space-mono-font;
-      font-weight: $weight;
-      font-style: $style;
-    }
-  }
+@mixin space-mono($weight, $style) {
+    font-family: $space-mono-font;
+    font-weight: $weight;
+    font-style: $style;
+}
   //@include space-mono('regular', $font-weight-regular, $font-style-normal);
 //lexend 
 // Font-family variable

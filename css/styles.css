@@ -43,6 +43,7 @@ button, input, label {
 h1, h2,
 h3, h4 {
   text-wrap: balance;
+  margin: 0;
 }
 
 /* A elements that don't have a class get default styles */
@@ -76,12 +77,34 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-h1 {
-  font-size: 56px;
-  line-height: 56px;
-  letter-spacing: -2.5px;
+header .section1 {
+  width: 100%;
+}
+
+button {
+  background-color: #FCB72B;
+  border: none;
   font-family: "Space Mono", serif;
   font-weight: 700;
   font-style: normal;
-  color: #495567;
+  font-size: 15px;
+  color: white;
+  line-height: 25px;
+  height: 53px;
+  width: 180px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1.5px solid #FCB72B;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  color: #FCB72B;
+  line-height: 25px;
+  height: 53px;
+  width: 180px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
