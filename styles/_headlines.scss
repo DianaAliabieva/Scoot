@@ -18,9 +18,10 @@
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2.14px;
-    font-family: $space-mono-font;
+    font-family: typography.$space-mono-font;
     font-weight: 700;
     font-style: normal;
+    color: white;
   }
 
   @mixin h3-style {
@@ -44,9 +45,10 @@
   @mixin p-style {
     font-size: 15px;
     line-height: 25px;
-    font-family: $lexend-deca-font;
+    font-family: typography.$lexend-deca-font;
     font-weight: 400;
     font-style: normal;
+    color: colors.$dimGrey;
   }
 
   @mixin footer-style {
