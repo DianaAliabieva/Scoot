@@ -27,17 +27,19 @@
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -1.79px;
-    font-family: $space-mono-font;
+    font-family: typography.$space-mono-font;
     font-weight: 700;
     font-style: normal;
+    color:white;
   }
   @mixin h4-style {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1.07px;
-    font-family: $space-mono-font;
+    font-family: typography.$space-mono-font;
     font-weight: 700;
     font-style: normal;
+    color:white;
   }
   @mixin p-style {
     font-size: 15px;
@@ -47,3 +49,12 @@
     font-style: normal;
   }
 
+  @mixin footer-style {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    font-family: typography.$space-mono-font;
+    font-weight: 700;
+    font-style: normal;
+    color:white;
+  }
