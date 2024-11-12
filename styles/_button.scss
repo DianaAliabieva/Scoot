@@ -1,7 +1,7 @@
 @use 'colors';
 @use 'typography' as *;
 
-button{
+button.mainButton{
     background-color: colors.$yellow;
     border: none;
     @include space-mono( 700, normal);
@@ -13,7 +13,7 @@ button{
     cursor: pointer;
 }
 
-button:hover {
+button.mainButton:hover {
     background-color:transparent;
     border: 1.5px solid colors.$yellow;
     @include space-mono( 700, normal);
