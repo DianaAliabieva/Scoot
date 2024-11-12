@@ -71,6 +71,7 @@ footer{
 .footer2 .flex-container2 p{
     width: 100%;
     @include p-style;
+    color: white;
     text-align: center;
     cursor: pointer;
 }
