@@ -1,0 +1,93 @@
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'headlines' as *;
+
+$tablet: 768px;
+$laptop: 1440px;
+.jobs{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 145px;
+    width: calc(100% - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    margin-bottom: 120px;
+
+    @media (min-width: $tablet) {
+        margin-left: 39px;
+        margin-right: 40px;
+        width: calc(100% - 79px); 
+    }
+    @media (min-width: $laptop) {
+        margin-left: 165px;
+        margin-right: 155px;
+        width: calc(100% - 320px);
+        flex-direction: column;
+        margin-bottom: 160px;
+    }
+
+    .job{
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 36px;
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $snow;
+        @media (min-width: $tablet) {
+            padding-left: 48px;
+            padding-right: 48px;
+            padding-top: 34px;
+            padding-bottom: 33px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+            
+            @media (min-width: $tablet){
+                align-items:flex-start;
+                width: 314px;
+                
+            }
+            @media (min-width: $laptop){
+                width: 650px;
+
+            }
+            h1{
+                @include space-mono($font-weight-bold,$font-style-normal);
+                font-size: 18px;
+                line-height:24px;
+                letter-spacing: -0.8px;
+                color: $darkNavy;
+                @media (min-width: $tablet){
+                    @include h4-style;
+                }
+            }
+            
+            p{
+                @include p-style;
+                margin: 0;
+                color: $darkNavy;
+            }
+        }
+
+        .mainButton{
+            width:100%;
+            @media (min-width: $tablet) {
+                width: 180px;
+            }
+
+        }
+    }
+}

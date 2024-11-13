@@ -1,4 +1,4 @@
-@use 'colors';
+@use 'colors' ;
 @use 'headlines' as *;
 @use 'typography' as *;
 
@@ -89,6 +89,7 @@ header{
                         text-decoration: none;   
                     }
                 }
+                
             }
             @media (min-width: $laptop){
                 margin-left: 60px;
@@ -115,3 +116,7 @@ header{
     }
 }
 
+a:hover{
+    transition: color 0.3s ease; 
+    color:colors.$yellow;
+}
