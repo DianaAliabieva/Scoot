@@ -6,22 +6,27 @@
     width: 100%;
     display: flex;
     flex-direction:column;
-
+    
+    @media screen  AND (min-width: 1440px) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .circle-info {
+
+    overflow: hidden;
+
     .left-text {
-        overflow: hidden;
-
-        .circle-gray{
-
-            @media screen  AND (min-width: 768px) {
-                position: relative;
-                width: 445px;
-                height: 445px;
-                border-radius: 50%;
-                background-color: colors.$dimGrey;
-            }
+        
+        @media screen  AND (min-width: 1440px) {
+            padding-top: 120px;
+            margin-left: 170px;
+            margin-right: 170px;
+            width: calc(100% - 340px);
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
         }
 
         .text {
@@ -30,6 +35,12 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 48px;
+
+            @media screen  AND (min-width: 1440px) {
+                align-items: self-start;
+                margin: 0;
+            }
+
             h2 {
                 @include footer-style;
                 color: colors.$darkNavy;
@@ -42,6 +53,13 @@
                     padding-left: 155px;
                     // padding-left: 25.5px;
                     // padding-right: 25.5px;
+                }
+
+                @media screen  AND (min-width: 1440px) {
+                    width: 445px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
                 }
             }
         
@@ -57,101 +75,373 @@
                     padding-left: 98px;
                 }
 
+                @media screen  AND (min-width: 1440px) {
+                    width: 445px;
+                    padding: 0;
+                    padding-top: 24px;
+                    padding-bottom: 40px;
+                    margin: 0;
+                    text-align: left;
+                }
+
             }
         }
 
-        .circle-arrow-bot-top{
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
+        .container{
             margin-top: 72px;
+            max-width: 100%;
 
-            .circle-image{
-                width: 311px;
-                height: 311px;
-                border-radius: 50%;
-                background-image: url('../images/Group36.png');
+            @media screen  AND (min-width: 1440px) {
+                margin: 0;
+            }
 
-                @media screen  AND (min-width: 768px) {
-                    width: 445px;
-                    height: 445px;
-                    background-size: cover;
-                }
+            .circle-arrow-bot-top{
+                display: flex;
+                justify-content: center;
 
-                img{
-                    max-width: 768px;
+    
+                .circle-image{
                     position: relative;
-                    transform: rotate(180deg);
-                    top: 134px;
-                    right: 5px;
-
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+    
                     @media screen  AND (min-width: 768px) {
-                        max-width: 1440px;
-                        right:140px;
-                        top: 250px;
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        transform: rotate(180deg);
+                        top: 134px;
+                        right: 5px;
+    
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            right:140px;
+                            top: 250px;
+                        }
                     }
                 }
             }
+    
+            .circle-arrow-bot-bot{
+                display: flex;
+                justify-content: center;
+                .circle-image{
+                    position: relative;
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+                    
+                    @media screen  AND (min-width: 768px) {
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        transform: scaleX(-1);
+                        top: 134px;
+                        right: 5px;
+
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            right:140px;
+                            top: 250px;
+                        }
+                    }
+                } 
+            }
+    
+            .circle-arrow-top-left{
+                display: flex;
+                justify-content: center;
+                .circle-image{
+                    position: relative;
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+
+                    @media screen  AND (min-width: 768px) {
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        right: 575px;
+
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            right: 1268px;
+                        }
+                    }
+                } 
+            }
+    
+            .circle-arrow-top-right{
+                display: flex;
+                justify-content: center;
+                .circle-image{
+                    position: relative;
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+
+                    @media screen  AND (min-width: 768px) {
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        transform: scaleX(-1);
+                        left: 125px;
+
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            top: 85px;
+                            left: 250px;
+                        }
+                    }
+                } 
+            }
         }
 
-        .circle-arrow-bot-bot{
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-            margin-top: 72px;
-            .circle-image{
-                width: 311px;
-                height: 311px;
-                border-radius: 50%;
-                background-image: url('../images/Group36.png');
+        .circle-gray{
 
-                img{
-                    max-width: 768px;
-                    position: relative;
-                    transform: scaleX(-1);
-                    top: 134px;
-                    right: 5px;
-                }
-            } 
+            @media screen  AND (min-width: 768px) {
+                position: absolute;
+                width: 445px;
+                height: 445px;
+                border-radius: 50%;
+                background-color: #E5ECF4;
+                left: 508px;
+            }
+        }
+    }
+
+    .right-text {
+
+        @media screen  AND (min-width: 1440px) {
+            padding-top: 120px;
+            margin-left: 170px;
+            margin-right: 170px;
+            width: calc(100% - 340px);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
-        .circle-arrow-top-left{
+        .text {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            overflow: hidden;
-            margin-top: 72px;
-            .circle-image{
-                width: 311px;
-                height: 311px;
-                border-radius: 50%;
-                background-image: url('../images/Group36.png');
+            align-items: center;
+            margin-bottom: 48px;
 
-                img{
-                    max-width: 768px;
-                    position: relative;
-                    right: 450px;
+            @media screen  AND (min-width: 1440px) {
+                align-items: self-start;
+                margin: 0;
+            }
+
+            h2 {
+                @include footer-style;
+                color: colors.$darkNavy;
+                text-align: center;
+                margin: 56px 32px 0px 32px;
+
+                @media screen  AND (min-width: 768px) {
+                    width: 100%;
+                    padding-right: 155px;
+                    padding-left: 155px;
+                    // padding-left: 25.5px;
+                    // padding-right: 25.5px;
                 }
-            } 
+
+                @media screen  AND (min-width: 1440px) {
+                    width: 445px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        
+            p{
+                @include p-style;
+                color: colors.$dimGrey;
+                text-align: center;
+                margin: 32px;
+
+                @media screen  AND (min-width: 768px) {
+                    width: 100%;
+                    padding-right: 98px;
+                    padding-left: 98px;
+                }
+
+                @media screen  AND (min-width: 1440px) {
+                    width: 445px;
+                    padding: 0;
+                    padding-top: 24px;
+                    padding-bottom: 40px;
+                    margin: 0;
+                    text-align: left;
+                }
+
+            }
         }
 
-        .circle-arrow-top-right{
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
+        .container{
             margin-top: 72px;
-            .circle-image{
-                width: 311px;
-                height: 311px;
-                border-radius: 50%;
-                background-image: url('../images/Group36.png');
+            max-width: 100%;
 
-                img{
-                    max-width: 768px;
+            @media screen  AND (min-width: 1440px) {
+                margin: 0;
+            }
+
+            .circle-arrow-bot-top{
+                display: flex;
+                justify-content: center;
+
+    
+                .circle-image{
                     position: relative;
-                    transform: scaleX(-1);
-                    left: 125px;
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+    
+                    @media screen  AND (min-width: 768px) {
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        transform: rotate(180deg);
+                        top: 134px;
+                        right: 5px;
+    
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            right:140px;
+                            top: 250px;
+                        }
+                    }
                 }
-            } 
+            }
+    
+            .circle-arrow-bot-bot{
+                display: flex;
+                justify-content: center;
+                .circle-image{
+                    position: relative;
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+                    
+                    @media screen  AND (min-width: 768px) {
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        transform: scaleX(-1);
+                        top: 134px;
+                        right: 5px;
+
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            right:140px;
+                            top: 250px;
+                        }
+                    }
+                } 
+            }
+    
+            .circle-arrow-top-left{
+                display: flex;
+                justify-content: center;
+                .circle-image{
+                    position: relative;
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+
+                    @media screen  AND (min-width: 768px) {
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        right: 575px;
+
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            right: 1268px;
+                        }
+                    }
+                } 
+            }
+    
+            .circle-arrow-top-right{
+                display: flex;
+                justify-content: center;
+                .circle-image{
+                    position: relative;
+                    width: 311px;
+                    height: 311px;
+                    border-radius: 50%;
+
+                    @media screen  AND (min-width: 768px) {
+                        width: 445px;
+                        height: 445px;
+                        background-size: cover;
+                    }
+    
+                    img{
+                        max-width: 768px;
+                        position: relative;
+                        transform: scaleX(-1);
+                        left: 125px;
+
+                        @media screen  AND (min-width: 768px) {
+                            max-width: 1440px;
+                            top: 85px;
+                            left: 250px;
+                        }
+                    }
+                } 
+            }
+        }
+
+        .circle-gray{
+
+            @media screen  AND (min-width: 768px) {
+                position: absolute;
+                width: 445px;
+                height: 445px;
+                border-radius: 50%;
+                background-color: #E5ECF4;
+                right: 508px;
+            }
         }
     }
 }
