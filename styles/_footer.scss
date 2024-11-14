@@ -73,6 +73,11 @@ footer{
     @include p-style;
     text-align: center;
     cursor: pointer;
+    color:colors.$dimGrey;
+    &:hover{
+        color:colors.$yellow;
+        
+    }
 }
 
 .footer2 .flex-container2 .social-network{
@@ -190,6 +195,7 @@ footer .right-circle{
         padding-right: 16px;
         padding-left: 16px;
         cursor: pointer;
+        
     }
     
     .footer2 .flex-container2 .social-network{

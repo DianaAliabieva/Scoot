@@ -132,6 +132,7 @@ nav.mobileNav {
     z-index: 1000;
     padding: 1rem;
     color: white;
+    @include h4-style;
 
     ul {
         display: flex;

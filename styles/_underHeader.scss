@@ -22,7 +22,6 @@ $laptop: 1440px;
     @media (min-width:$tablet) {
         padding-left:98px;
         padding-right:98px;
-        overflow: hidden;
 
     }
     @media (min-width:$laptop) {
@@ -88,10 +87,8 @@ $laptop: 1440px;
         @media (min-width:$tablet) {
             position: absolute;
             display: block;
-            bottom:39px;
+            bottom:40px;
             right: -25px;
-            overflow: hidden;
-            
         }
         @media (min-width:$laptop) {
             right: -45px;
@@ -117,8 +114,9 @@ $laptop: 1440px;
     align-items:center;
     color:white;
     @include h3-style;
-    background-image:url(/images/abo.png);
+    background-image:url(/images/careers.png);
     position: relative;
+    overflow: hidden;
 // change photos
 
     background-repeat: no-repeat;
@@ -144,4 +142,84 @@ $laptop: 1440px;
             right: -25px;
         }
     }
+}
+
+.underHeaderUsual_about{
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    align-items:center;
+    color:white;
+    @include h3-style;
+    background-image:url(/images/abo.png);
+    position: relative;
+    overflow: hidden;
+// change photos
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width:$tablet){
+        justify-content: flex-start;
+        height: 200px;
+        padding-left: 97px;
+        @include h1-style;
+        background-image:url(/images/abo.png);
+        color: white;
+    }
+    @media (min-width:$laptop){
+        justify-content: flex-start;
+        padding-left: 165px;
+        background-image:url(/images/abo.png);
+    }
+    div.circles{
+        display: none;
+        @media (min-width:$tablet) {
+            position: absolute;
+            display: block;
+            bottom:75px;
+            right: -25px;
+        }
+    } 
+}
+
+.underHeaderUsual_locations{
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    align-items:center;
+    color:white;
+    @include h3-style;
+    background-image:url(/images/careers.png);
+    position: relative;
+    overflow: hidden;
+// change photos
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width:$tablet){
+        justify-content: flex-start;
+        height: 200px;
+        padding-left: 97px;
+        @include h1-style;
+        background-image:url(/images/abo.png);
+        color: white;
+    }
+    @media (min-width:$laptop){
+        justify-content: flex-start;
+        padding-left: 165px;
+        background-image:url(/images/abo.png);
+    }
+    div.circles{
+        display: none;
+        @media (min-width:$tablet) {
+            position: absolute;
+            display: block;
+            bottom:75px;
+            right: -25px;
+        }
+    } 
 }
