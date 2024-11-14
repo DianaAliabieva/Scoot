@@ -1,0 +1,97 @@
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'headlines' as *;
+
+$tablet: 768px;
+$laptop: 1440px;
+
+.ourValues{
+    margin-left: 32px;
+    margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: calc(100% - 64px);
+
+    @media (min-width: $tablet) {
+        margin-left: 155px;
+        margin-right: 155px;
+        width: calc(100% - 310px);
+        
+    }
+    @media (min-width: $laptop) {
+        margin-left: 155px;
+        margin-right: 155px;
+        width: calc(100% - 310px);
+        flex-direction: column;
+        
+    }
+
+    h1 {
+        @include space-mono($font-weight-bold,$font-style-normal);
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+        color: $darkNavy;
+        @media (min-width: $tablet) {
+            @include h2-style;
+        }
+    }
+    h4{
+        @include h4-style;
+        color: $darkNavy;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        // gap:56px;
+        @media (min-width: $laptop) {
+            flex-direction: row;
+            gap:30px;
+        }
+    }
+    .card{
+        margin-top: 64px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+
+
+        .group{
+            position: relative;
+            height: 288px;
+            width: 240px;
+            
+            @media (min-width: $tablet) {
+                
+            }
+
+            
+            div.yellowCircle{
+                display: flex;
+                position: absolute;
+                background-color: #fcbf49; /* Adjust the color to your design */
+                color:$darkNavy; /* Adjust text color */
+                border-radius: 50%;
+                object-fit: cover; 
+                align-items:center;
+                padding: 20px;
+                text-align: center;
+                bottom: 20px;
+                left:85px;
+                h1{
+                    @include h4-style;
+                }
+                
+            }
+         }
+    }
+    p{
+        @include p-style;
+        color: $darkNavy;
+        text-align: center;
+       
+    }
+}

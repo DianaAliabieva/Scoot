@@ -1,0 +1,268 @@
+@use 'colors';
+@use 'typography' as *;
+@use 'headlines' as *;
+
+.html{
+    height: 100%;
+}
+
+footer{
+    max-height: 758px;
+    overflow: hidden;
+}
+
+.footer1 .flex-container{
+    display: flex;
+    width: 100%;
+    height: 320px;
+    background-color: colors.$darkNavy;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1 .flex-container h4{
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    @include footer-style;
+    text-align: center;
+}
+
+.footer1 .flex-container h4 span{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.flex-container .appstore-container img{
+    position: relative;
+    padding-top: 40px;
+    display: inline-block;
+    padding-left: 6.43px;
+    padding-right: 6.43px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.footer2 .flex-container2{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 438px;
+    background-color: #333A44;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.footer2 .flex-container2 h4{
+    width: 100%;
+    @include footer-style;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 41px;
+}
+
+.footer2 .flex-container2 a {
+    text-decoration: none;
+}
+
+.footer2 .flex-container2 p{
+    width: 100%;
+    @include p-style;
+    text-align: center;
+    cursor: pointer;
+    color:colors.$dimGrey;
+    &:hover{
+        color:colors.$yellow;
+        
+    }
+}
+
+.footer2 .flex-container2 .social-network{
+    padding-top: 85px;
+}
+
+.footer2 .flex-container2 .social-network img{
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+footer .left-circle{
+    position: relative;
+    width: 347px;
+    height: 347px;
+    border: 15px solid colors.$dimGrey;
+    border-radius: 50%;
+    bottom: 611.5px;
+    right: 180px;
+    opacity: 0.1;
+}
+
+footer .middle-circle{
+    position: relative;
+    width: 347px;
+    height: 347px;
+    background-color: colors.$dimGrey;
+    border-radius: 50%;
+    bottom: 958.5px;
+    left: 201.5px;
+    opacity: 0.1;
+}
+
+footer .right-circle{
+    position: relative;
+    width: 347px;
+    height: 347px;
+    background-color: colors.$dimGrey;
+    border-radius: 50%;
+    bottom: 1305.5px;
+    left: 604.5px;
+    opacity: 0;
+}
+
+@media screen  AND (min-width: 768px) {
+    footer{
+        height: 396px;
+    }
+    
+    .footer1{
+        height: 300px;
+    }
+
+    footer .left-circle{
+        bottom: 249.5px;
+    }
+
+    footer .middle-circle{
+        background-color: transparent;
+        border: 15px solid colors.$dimGrey;
+        bottom: 596.5px;
+    }
+
+    footer .right-circle{
+        bottom: 943.5px;
+        opacity: 0.1;
+    }
+
+    .footer1 .flex-container h4{
+        @include h2-style;
+    }
+
+    .footer1 .flex-container h4 span{
+        white-space: normal;
+    }
+
+    .footer2{
+        height:96px;
+    }
+
+    .footer2 .flex-container2{
+        height: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+    }
+
+    .footer2 .flex-container2 h4{
+        width: auto;
+        text-align: left;
+        padding: 0px;
+        padding-left: 39px;
+        padding-right: 42.58px;
+    }
+
+    .footer2 .flex-container2 .pages-menu{
+        height: 100%;
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+        align-items: center
+    }
+
+    .footer2 .flex-container2 a {
+        height: 100%;
+    }
+    
+    .footer2 .flex-container2 p{
+        @include p-style;
+        margin: 0;
+        padding: 32px;
+        padding-top: 39px;
+        padding-right: 16px;
+        padding-left: 16px;
+        cursor: pointer;
+        
+    }
+    
+    .footer2 .flex-container2 .social-network{
+        display: flex;
+        padding: 0;
+        justify-content: flex-end;
+        flex-grow: 4;
+        padding-right: 39px;
+    }
+    
+    .footer2 .flex-container2 .social-network img{
+        display: inline-block;
+        padding-left: 12px;
+        padding-right: 12px;
+        cursor: pointer;
+    }
+}
+
+@media screen  AND (min-width: 1440px) {
+
+    .footer1 .flex-container{
+        height: 300px;
+        flex-direction: row;
+    }
+
+    .footer1 .flex-container .appstore-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 336px;
+        padding-right: 165px;
+    }
+
+    .footer1 .flex-container h4 {
+        text-align: left;
+        padding-left: 165px;
+    }
+
+    .footer1 .flex-container .appstore-container img{
+        height: 40px;
+        transform: scale(1.4);
+        padding: 0;
+        padding-left: 38.83px;
+        padding-right: 20.83px;
+    }
+
+    .footer2 .flex-container2 h4 {
+        padding-left: 165px;
+    }
+
+    .footer2 .flex-container2 .social-network{
+        justify-content: flex-end;
+        text-align: left;
+        flex-grow: 5;
+        padding-right: 165px;
+    }
+
+    footer .left-circle{
+        right: 0px;
+        left: 460px;
+    }
+
+    footer .middle-circle{
+        left: 842px;
+    }
+
+    footer .right-circle{
+        left: 1245px;
+    }
+}

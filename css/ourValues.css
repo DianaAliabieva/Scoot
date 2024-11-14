@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.ourValues {
+  margin-left: 155px;
+  margin-right: 155px;
+  border: 1px solid violet;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=ourValues.css.map */

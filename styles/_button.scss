@@ -1,26 +1,20 @@
 @use 'colors';
 @use 'typography' as *;
 
-button{
+button.mainButton{
     background-color: colors.$yellow;
     border: none;
     @include space-mono( 700, normal);
     font-size: 15px;
     color:white;
     line-height: 25px;
-    height: 53px;
-    width: 180px;
+    padding: 14px 44px;
+    min-width: 180px;
+    min-height: 53px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color:transparent;
-    border: 1.5px solid colors.$yellow;
-    @include space-mono( 700, normal);
-    font-size: 15px;
-    color:colors.$yellow;
-    line-height: 25px;
-    height: 53px;
-    width: 180px;
-    cursor: pointer;
+    &:hover{
+        background-color:transparent;
+        border: 1.5px solid colors.$yellow;
+        color:colors.$yellow;
+    }
 }

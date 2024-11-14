@@ -1,0 +1,143 @@
+@use 'colors';
+@use 'typography' as *;
+@use 'headlines' as *;
+
+.locations-map{
+
+    margin-top: 72px;
+    margin-bottom: 72px;
+    margin-left: 32px;
+    margin-right: 32px;
+    
+    @media screen  AND (min-width: 768px) {
+        margin-top: 144px;
+        margin-bottom: 120px;
+        margin-left: 39px;
+        margin-right: 40px;
+    }
+
+    @media screen  AND (min-width: 768px) {
+        margin-left: 164px;
+        margin-right: 164px;
+    }
+    
+    .map{
+        display: flex;
+        justify-content: center;
+
+        .map-tablet{
+            display: none;
+        }
+
+        .map-labtop{
+            display: none;
+        }
+
+        @media screen  AND (min-width: 768px) {
+            .map-mobile{
+                display: none;
+            }
+
+            .map-tablet{
+                display: flex;
+                justify-content: center;
+                width: 689px;
+            }
+        }
+
+        @media screen  AND (min-width: 1440px) {
+            .map-tablet{
+                display: none;
+            }
+
+            .map-labtop{
+                display: flex;
+                justify-content: center;
+                width: 1110px;
+            }
+        }
+    }
+
+    .cities{
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        @media screen  AND (min-width: 768px) {
+            display: none;
+        }
+
+        li{
+            @include h4-style;
+            color: colors.$darkNavy;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            background-color: #FCB72B26;
+            
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        margin-top: 72px;
+
+        @media screen  AND (min-width: 768px) {
+            margin-left: 58px;
+            margin-right: 58px;
+        }
+        
+    
+        @media screen  AND (min-width: 1440px) {
+            flex-direction: row;
+            justify-content: start;
+            margin: 0;
+            margin-top: 120px;
+            justify-content: space-between;
+        }
+    
+        h2 {
+            @include footer-style;
+            color: colors.$darkNavy;
+            text-align: center;
+    
+            @media screen  AND (min-width: 768px) {
+                margin-left: 108px;
+                margin-right: 108px;
+            }
+    
+            @media screen  AND (min-width: 1440px) {
+                text-align: start;
+                margin: 0;
+                width: 351px;
+                @include h2-style;
+            }
+        }
+    
+        p{
+            @include p-style;
+            color: colors.$dimGrey;
+            text-align: center;
+    
+            @media screen  AND (min-width: 768px) {
+                
+            }
+    
+            @media screen  AND (min-width: 1440px) {
+                text-align: start;
+                margin: 0;
+                width: 445px;
+            }
+    
+        }
+    }
+}
+
