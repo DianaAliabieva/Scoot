@@ -594,6 +594,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .left-text .container .circle-arrow-bot-top .circle-image {
@@ -625,6 +626,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .left-text .container .circle-arrow-bot-bot .circle-image {
@@ -656,6 +658,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .left-text .container .circle-arrow-top-left .circle-image {
@@ -684,6 +687,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .left-text .container .circle-arrow-top-right .circle-image {
@@ -811,6 +815,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .right-text .container .circle-arrow-bot-top .circle-image {
@@ -842,6 +847,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .right-text .container .circle-arrow-bot-bot .circle-image {
@@ -873,6 +879,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .right-text .container .circle-arrow-top-left .circle-image {
@@ -901,6 +908,7 @@ button.mainButton:hover {
   width: 311px;
   height: 311px;
   border-radius: 50%;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .circle-info .right-text .container .circle-arrow-top-right .circle-image {
@@ -1218,5 +1226,382 @@ button.mainButton:hover {
     display: block;
     bottom: 75px;
     right: -25px;
+  }
+}
+
+.underHeaderUsual_about {
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-image: url(../images/about_Mobile.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .underHeaderUsual_about {
+    justify-content: flex-start;
+    height: 200px;
+    padding-left: 97px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #495567;
+    background-image: url(../images/about_Tablet.png);
+    color: white;
+  }
+}
+@media (min-width: 1440px) {
+  .underHeaderUsual_about {
+    justify-content: flex-start;
+    padding-left: 165px;
+    background-image: url(../images/about_Labtop.png);
+  }
+}
+.underHeaderUsual_about div.circles {
+  display: none;
+}
+@media (min-width: 768px) {
+  .underHeaderUsual_about div.circles {
+    position: absolute;
+    display: block;
+    bottom: 75px;
+    right: -25px;
+  }
+}
+
+.underHeaderUsual_locations {
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-image: url(../images/locations_Mobile.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .underHeaderUsual_locations {
+    justify-content: flex-start;
+    height: 200px;
+    padding-left: 97px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #495567;
+    background-image: url(../images/locations_Tablet.png);
+    color: white;
+  }
+}
+@media (min-width: 1440px) {
+  .underHeaderUsual_locations {
+    justify-content: flex-start;
+    padding-left: 165px;
+    background-image: url(../images/locations_Labtop.png);
+  }
+}
+.underHeaderUsual_locations div.circles {
+  display: none;
+}
+@media (min-width: 768px) {
+  .underHeaderUsual_locations div.circles {
+    position: absolute;
+    display: block;
+    bottom: 75px;
+    right: -25px;
+  }
+}
+
+.FAQ {
+  margin: 0px 32px;
+  margin-top: 145px;
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .FAQ {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .FAQ {
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+}
+.FAQ h2 {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.43px;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  color: #495567;
+  text-align: center;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .FAQ h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+.FAQ .FAQ-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 1440px) {
+  .FAQ .FAQ-container {
+    flex-direction: row;
+  }
+}
+.FAQ .FAQ-container h4 {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #495567;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .FAQ .FAQ-container h4 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .FAQ .FAQ-container h4 {
+    width: 31.53%;
+  }
+}
+.FAQ .FAQ-container .questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .FAQ .FAQ-container .questions-container {
+    width: 65.77%;
+    gap: 30px;
+  }
+}
+.FAQ .FAQ-container .questions-container .question {
+  padding: 32px;
+  background-color: #F2F5F9;
+  cursor: pointer;
+}
+.FAQ .FAQ-container .questions-container .question:hover {
+  background-color: #FFF4DF;
+}
+.FAQ .FAQ-container .questions-container .question .position-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.FAQ .FAQ-container .questions-container .question .position-arrow h5 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  color: #495567;
+}
+@media screen and (min-width: 768px) {
+  .FAQ .FAQ-container .questions-container .question .position-arrow h5 {
+    font-size: 24px;
+  }
+}
+.FAQ .FAQ-container .questions-container .question p {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #495567;
+}
+
+.locations-map {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+@media screen and (min-width: 768px) {
+  .locations-map {
+    margin-top: 144px;
+    margin-bottom: 120px;
+    margin-left: 39px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .locations-map {
+    margin-left: 164px;
+    margin-right: 164px;
+  }
+}
+.locations-map .map {
+  display: flex;
+  justify-content: center;
+}
+.locations-map .map .map-tablet {
+  display: none;
+}
+.locations-map .map .map-labtop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .locations-map .map .map-mobile {
+    display: none;
+  }
+  .locations-map .map .map-tablet {
+    display: flex;
+    justify-content: center;
+    width: 689px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .locations-map .map .map-tablet {
+    display: none;
+  }
+  .locations-map .map .map-labtop {
+    display: flex;
+    justify-content: center;
+    width: 1110px;
+  }
+}
+.locations-map .cities {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .locations-map .cities {
+    display: none;
+  }
+}
+.locations-map .cities li {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #495567;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: rgba(252, 183, 43, 0.1490196078);
+}
+.locations-map .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 72px;
+}
+@media screen and (min-width: 768px) {
+  .locations-map .text {
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .locations-map .text {
+    flex-direction: row;
+    justify-content: start;
+    margin: 0;
+    margin-top: 120px;
+    justify-content: space-between;
+  }
+}
+.locations-map .text h2 {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.43px;
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  color: #495567;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .locations-map .text h2 {
+    margin-left: 108px;
+    margin-right: 108px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .locations-map .text h2 {
+    text-align: start;
+    margin: 0;
+    width: 351px;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+.locations-map .text p {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #939CAA;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .locations-map .text p {
+    text-align: start;
+    margin: 0;
+    width: 445px;
   }
 }/*# sourceMappingURL=styles.css.map */

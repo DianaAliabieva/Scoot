@@ -1,0 +1,99 @@
+@use 'colors';
+@use 'typography' as *;
+@use 'headlines' as *;
+
+.FAQ{
+
+    margin: 0px 32px;
+    margin-top: 145px;
+    margin-bottom: 72px;
+
+    @media screen  AND (min-width: 768px) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    @media screen  AND (min-width: 1440px) {
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+
+    h2{
+        @include footer-style;
+        color: colors.$darkNavy;
+        text-align: center;
+        margin-bottom: 48px;
+
+        @media screen  AND (min-width: 768px) {
+            @include h2-style;
+        }
+    }
+
+    .FAQ-container{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        @media screen  AND (min-width: 1440px) {
+            flex-direction: row;
+        }
+
+        h4{
+            @include h4-style;
+            color: colors.$darkNavy;
+            text-align: center;
+
+            @media screen  AND (min-width: 768px) {
+                @include h3-style;
+            }
+
+            @media screen  AND (min-width: 1440px) {
+                width: 31.53%;
+            }
+        }
+
+        .questions-container{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 48px;
+
+            @media screen  AND (min-width: 1440px) {
+                width: 65.77%;
+                gap: 30px;
+            }
+
+            .question{
+                padding: 32px;
+                background-color: colors.$snow;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #FFF4DF;
+                }
+
+                .position-arrow{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h5{
+                        margin: 0;
+                        @include h4-style;
+                        font-size: 18px;
+                        color: colors.$darkNavy;
+
+                        @media screen  AND (min-width: 768px) {
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                p{
+                    @include p-style;
+                    color: colors.$darkNavy;
+                }
+            }
+        }
+    }
+}

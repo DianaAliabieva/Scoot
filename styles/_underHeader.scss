@@ -142,3 +142,81 @@ $laptop: 1440px;
         }
     }
 }
+
+.underHeaderUsual_about{
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    align-items:center;
+    color:white;
+    @include h3-style;
+    background-image:url(../images/about_Mobile.jpg);
+    position: relative;
+// change photos
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width:$tablet){
+        justify-content: flex-start;
+        height: 200px;
+        padding-left: 97px;
+        @include h1-style;
+        background-image:url(../images/about_Tablet.png);
+        color: white;
+    }
+    @media (min-width:$laptop){
+        justify-content: flex-start;
+        padding-left: 165px;
+        background-image:url(../images/about_Labtop.png);
+    }
+    div.circles{
+        display: none;
+        @media (min-width:$tablet) {
+            position: absolute;
+            display: block;
+            bottom:75px;
+            right: -25px;
+        }
+    } 
+}
+
+.underHeaderUsual_locations{
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    align-items:center;
+    color:white;
+    @include h3-style;
+    background-image:url(../images/locations_Mobile.png);
+    position: relative;
+// change photos
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width:$tablet){
+        justify-content: flex-start;
+        height: 200px;
+        padding-left: 97px;
+        @include h1-style;
+        background-image:url(../images/locations_Tablet.png);
+        color: white;
+    }
+    @media (min-width:$laptop){
+        justify-content: flex-start;
+        padding-left: 165px;
+        background-image:url(../images/locations_Labtop.png);
+    }
+    div.circles{
+        display: none;
+        @media (min-width:$tablet) {
+            position: absolute;
+            display: block;
+            bottom:75px;
+            right: -25px;
+        }
+    } 
+}
