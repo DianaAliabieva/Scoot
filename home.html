@@ -12,11 +12,12 @@
 <body>
     <header>
         <div class="head">
-            <button class="burger">
-                <img src="./images/burger.png" alt="" class="burger">
+            <button id="burgerButton" class="burger">
+                <img src="./images/burger.png" alt="" class="burger" >
+                <img src="images/cross.svg" alt="" class="cross">
             </button>
             <h4>scoot</h4>
-            <nav>
+            <nav class="navigation">
                 <ul>
                     <a href="/about.html"><li>About</li></a>
                     <a href="/locations.html"><li>Location</li></a>
@@ -24,8 +25,19 @@
                 </ul>
             </nav>
             <button class="mainButton">Get Scootin</button>
+
+            <nav class="mobileNav" id="mobileMenu">
+                <ul>
+                    <a href="/about.html"><li>About</li></a>
+                    <a href="/locations.html"><li>Location</li></a>
+                    <a href="/careers.html"><li>Careers</li></a>
+                </ul>
+                <button class="mainButton">Get Scootin</button>
+            </nav>
         </div>
     </header>
+
+
     <div class="underHeader">
         <h3>Scooter sharing made simple</h3>
         <p>Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>

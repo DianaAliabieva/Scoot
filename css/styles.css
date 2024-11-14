@@ -89,50 +89,52 @@ header {
 @media (min-width: 1440px) {
   header {
     height: 96px;
-    margin-left: 170px;
-    margin-right: 170px;
+    margin: 0 auto;
     width: calc(100% - 340px);
   }
 }
-header div.head {
-  height: 100%;
-  width: 100%;
+header .head {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  header div.head {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  header .head {
     justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin: 0px;
   }
 }
 @media (min-width: 1440px) {
-  header div.head {
+  header .head {
     justify-content: flex-start;
   }
 }
-header div.head button.burger {
+header .head button.burger {
   margin-left: 32px;
   border: none;
   background-color: transparent;
 }
+header .head button.burger img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header .head button.burger img.cross {
+  display: none;
+}
+header .head button.burger.active img.cross {
+  display: block;
+}
+header .head button.burger.active img.burger {
+  display: none;
+}
 @media (min-width: 768px) {
-  header div.head button.burger {
+  header .head button.burger {
     display: none;
   }
 }
-header div.head button.burger img.burger {
-  height: 100%;
-  width: 100%;
-}
-header div.head h4 {
+header .head h4 {
   margin: auto;
   text-align: center;
   font-size: 24px;
@@ -142,19 +144,17 @@ header div.head h4 {
   font-weight: 700;
   font-style: normal;
   color: #495567;
-  text-align: center;
 }
 @media (min-width: 768px) {
-  header div.head h4 {
-    margin: 0px;
+  header .head h4 {
+    margin: 0;
   }
 }
-header div.head nav {
+header .head nav.navigation {
   display: none;
 }
 @media (min-width: 768px) {
-  header div.head nav {
-    display: block;
+  header .head nav.navigation {
     display: flex;
     justify-content: space-around;
     font-family: "Space Mono", serif;
@@ -163,41 +163,70 @@ header div.head nav {
     font-size: 15px;
     color: #495567;
   }
-  header div.head nav ul {
+  header .head nav.navigation ul {
     display: flex;
     flex-direction: row;
     gap: 32px;
+    list-style: none;
+  }
+  header .head nav.navigation ul a {
     text-decoration: none;
-    list-style-type: none;
     cursor: pointer;
   }
-  header div.head nav ul a {
-    text-decoration: none;
+  header .head nav.navigation ul a:hover {
+    color: #FCB72B;
+    transition: color 0.3s ease;
   }
 }
 @media (min-width: 1440px) {
-  header div.head nav {
+  header .head nav.navigation {
     margin-left: 60px;
   }
 }
-header div.head button.mainButton {
+header .head button.mainButton {
   display: none;
 }
 @media (min-width: 768px) {
-  header div.head button.mainButton {
+  header .head button.mainButton {
     display: block;
   }
 }
 @media (min-width: 1440px) {
-  header div.head button.mainButton {
-    display: block;
+  header .head button.mainButton {
     margin-inline-start: auto;
   }
 }
 
-a:hover {
-  transition: color 0.3s ease;
-  color: #FCB72B;
+nav.mobileNav {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #495567;
+  z-index: 1000;
+  padding: 1rem;
+  color: white;
+}
+nav.mobileNav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+}
+nav.mobileNav ul a {
+  text-decoration: none;
+  color: white; /* Ensure the text color contrasts the background */
+}
+nav.mobileNav button.mainButton {
+  display: flex;
+}
+nav.mobileNav.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 32px;
 }
 
 .html {
@@ -468,29 +497,26 @@ button.mainButton {
   font-size: 15px;
   color: white;
   line-height: 25px;
-  height: 53px;
-  width: 180px;
+  padding: 14px 44px;
+  min-width: 180px;
+  min-height: 53px;
   cursor: pointer;
 }
-
 button.mainButton:hover {
   background-color: transparent;
   border: 1.5px solid #FCB72B;
-  font-family: "Space Mono", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 15px;
   color: #FCB72B;
-  line-height: 25px;
-  height: 53px;
-  width: 180px;
-  cursor: pointer;
 }
 
 .circle-info {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .circle-info {
+    margin-bottom: 120px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .circle-info {
@@ -965,6 +991,7 @@ button.mainButton:hover {
   .underHeader {
     padding-left: 98px;
     padding-right: 98px;
+    overflow: hidden;
   }
 }
 @media (min-width: 1440px) {
@@ -1056,6 +1083,7 @@ button.mainButton:hover {
     display: block;
     bottom: 39px;
     right: -25px;
+    overflow: hidden;
   }
 }
 @media (min-width: 1440px) {

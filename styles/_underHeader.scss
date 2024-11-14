@@ -22,6 +22,7 @@ $laptop: 1440px;
     @media (min-width:$tablet) {
         padding-left:98px;
         padding-right:98px;
+        overflow: hidden;
 
     }
     @media (min-width:$laptop) {
@@ -89,6 +90,8 @@ $laptop: 1440px;
             display: block;
             bottom:39px;
             right: -25px;
+            overflow: hidden;
+            
         }
         @media (min-width:$laptop) {
             right: -45px;
